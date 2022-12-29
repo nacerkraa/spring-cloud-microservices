@@ -11,7 +11,7 @@ public class FallbackController {
         return Mono.just("Order Service is taking too long ...,Please try again later");
     }
 
-    @RequestMapping("/paymentFallBack")
+    @RequestMapping("/paymentFallback")
     public Mono<String> paymentServiceFallBack(){
         return Mono.just("Payment Service is taking too long ...,Please try again later");
     }
